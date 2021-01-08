@@ -471,3 +471,4 @@
         private System.Windows.Forms.DataGridViewButtonColumn Column6;
     }
 }
+//deneme 12
