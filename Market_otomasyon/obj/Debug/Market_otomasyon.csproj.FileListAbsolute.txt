@@ -26,3 +26,4 @@ C:\Users\Lenovo\Desktop\Market_otomasyon\Market_otomasyon\obj\Debug\Market_otoma
 C:\Users\Lenovo\Desktop\Market_otomasyon\Market_otomasyon\obj\Debug\Market_otomasyon.pdb
 C:\Users\Lenovo\Desktop\Market_otomasyon\Market_otomasyon\obj\Debug\Market_otomasyon.peşin_ödeme_ekran.resources
 C:\Users\Lenovo\Desktop\Market_otomasyon\Market_otomasyon\obj\Debug\Market_otomasyon.veresiye_ödeme.resources
+C:\Users\Lenovo\Desktop\Market_otomasyon\Market_otomasyon\obj\Debug\Market_otomasyon.müşteriler.resources
