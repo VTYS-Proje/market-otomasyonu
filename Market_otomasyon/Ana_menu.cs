@@ -60,7 +60,9 @@ namespace Market_otomasyon
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            müşteriler müşteri = new müşteriler();
+            müşteri.Show();
+            this.Hide();
         }
     }
 }

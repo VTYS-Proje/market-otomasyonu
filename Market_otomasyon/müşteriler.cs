@@ -16,5 +16,12 @@ namespace Market_otomasyon
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Ana_menu menü = new Ana_menu();
+            menü.Show();
+            this.Hide();
+        }
     }
 }

@@ -91,7 +91,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.MediumPurple;
-            this.label5.Location = new System.Drawing.Point(758, 17);
+            this.label5.Location = new System.Drawing.Point(744, 18);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 16);
             this.label5.TabIndex = 10;
@@ -104,7 +104,7 @@
             this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Location = new System.Drawing.Point(668, 6);
+            this.button6.Location = new System.Drawing.Point(654, 7);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(84, 44);
             this.button6.TabIndex = 7;
