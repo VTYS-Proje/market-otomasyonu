@@ -65,6 +65,7 @@
     <Compile Include="Kullanıcı_oluştur.Designer.cs">
       <DependentUpon>Kullanıcı_oluştur.cs</DependentUpon>
     </Compile>
+    <Compile Include="Moduls\Entity\Borc.cs" />
     <Compile Include="müşteriler.cs">
       <SubType>Form</SubType>
     </Compile>
