@@ -66,6 +66,7 @@
       <DependentUpon>Kullanıcı_oluştur.cs</DependentUpon>
     </Compile>
     <Compile Include="Moduls\Entity\Borc.cs" />
+    <Compile Include="Moduls\Entity\Musteri.cs" />
     <Compile Include="müşteriler.cs">
       <SubType>Form</SubType>
     </Compile>
