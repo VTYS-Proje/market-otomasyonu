@@ -11,6 +11,6 @@ namespace Market_otomasyon.Moduls.Entity
         public int MusteriID { get; set; }
         public string MusteriAd { get; set; }
         public string MusteriSoyad { get; set; }
-        public int TelefonNo { get; set; }
+        public string TelefonNo { get; set; }
     }
 }

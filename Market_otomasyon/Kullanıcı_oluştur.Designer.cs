@@ -32,16 +32,16 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtkullaniciadi = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtsoyisim = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblno = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtsifre = new System.Windows.Forms.TextBox();
+            this.txtisim = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -77,12 +77,12 @@
             this.label7.TabIndex = 57;
             this.label7.Text = "KULLANICI OLUŞTUR";
             // 
-            // textBox4
+            // txtkullaniciadi
             // 
-            this.textBox4.Location = new System.Drawing.Point(186, 262);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(134, 20);
-            this.textBox4.TabIndex = 56;
+            this.txtkullaniciadi.Location = new System.Drawing.Point(186, 262);
+            this.txtkullaniciadi.Name = "txtkullaniciadi";
+            this.txtkullaniciadi.Size = new System.Drawing.Size(134, 20);
+            this.txtkullaniciadi.TabIndex = 56;
             // 
             // label6
             // 
@@ -94,12 +94,12 @@
             this.label6.TabIndex = 55;
             this.label6.Text = "Kullanıcı Adı :";
             // 
-            // textBox3
+            // txtsoyisim
             // 
-            this.textBox3.Location = new System.Drawing.Point(186, 236);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(134, 20);
-            this.textBox3.TabIndex = 54;
+            this.txtsoyisim.Location = new System.Drawing.Point(186, 236);
+            this.txtsoyisim.Name = "txtsoyisim";
+            this.txtsoyisim.Size = new System.Drawing.Size(134, 20);
+            this.txtsoyisim.TabIndex = 54;
             // 
             // label5
             // 
@@ -131,16 +131,17 @@
             this.button1.TabIndex = 51;
             this.button1.Text = "KAYIT";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label4
+            // lblno
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(163, 312);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(176, 24);
-            this.label4.TabIndex = 50;
-            this.label4.Text = "NO Burda belirecek";
+            this.lblno.AutoSize = true;
+            this.lblno.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblno.Location = new System.Drawing.Point(163, 312);
+            this.lblno.Name = "lblno";
+            this.lblno.Size = new System.Drawing.Size(176, 24);
+            this.lblno.TabIndex = 50;
+            this.lblno.Text = "NO Burda belirecek";
             // 
             // label3
             // 
@@ -152,20 +153,20 @@
             this.label3.TabIndex = 49;
             this.label3.Text = "Satıcı no:";
             // 
-            // textBox2
+            // txtsifre
             // 
-            this.textBox2.Location = new System.Drawing.Point(186, 288);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(134, 20);
-            this.textBox2.TabIndex = 48;
+            this.txtsifre.Location = new System.Drawing.Point(186, 288);
+            this.txtsifre.Name = "txtsifre";
+            this.txtsifre.Size = new System.Drawing.Size(134, 20);
+            this.txtsifre.TabIndex = 48;
             // 
-            // textBox1
+            // txtisim
             // 
-            this.textBox1.Location = new System.Drawing.Point(186, 210);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(134, 20);
-            this.textBox1.TabIndex = 47;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtisim.Location = new System.Drawing.Point(186, 210);
+            this.txtisim.Name = "txtisim";
+            this.txtisim.Size = new System.Drawing.Size(134, 20);
+            this.txtisim.TabIndex = 47;
+            this.txtisim.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -196,16 +197,16 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtkullaniciadi);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtsoyisim);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblno);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtsifre);
+            this.Controls.Add(this.txtisim);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Kullanıcı_oluştur";
@@ -221,16 +222,16 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtkullaniciadi;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtsoyisim;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblno;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtsifre;
+        private System.Windows.Forms.TextBox txtisim;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
     }

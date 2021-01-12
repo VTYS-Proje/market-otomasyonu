@@ -42,7 +42,21 @@ namespace Market_otomasyon
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtmüstad = new System.Windows.Forms.TextBox();
+            this.txtmüstsoyad = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtmüstid = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtmüsttelefon = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btnekle = new System.Windows.Forms.Button();
+            this.btnguncelle = new System.Windows.Forms.Button();
+            this.btnsil = new System.Windows.Forms.Button();
+            this.btnlistele = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label5
@@ -187,17 +201,143 @@ namespace Market_otomasyon
             this.panel1.Size = new System.Drawing.Size(1267, 55);
             this.panel1.TabIndex = 17;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnlistele);
+            this.groupBox1.Controls.Add(this.btnsil);
+            this.groupBox1.Controls.Add(this.btnguncelle);
+            this.groupBox1.Controls.Add(this.btnekle);
+            this.groupBox1.Controls.Add(this.txtmüsttelefon);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.txtmüstid);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.txtmüstsoyad);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.txtmüstad);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Location = new System.Drawing.Point(12, 61);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(295, 303);
+            this.groupBox1.TabIndex = 18;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(24, 59);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(63, 13);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Müşteri Ad :";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // txtmüstad
+            // 
+            this.txtmüstad.Location = new System.Drawing.Point(93, 56);
+            this.txtmüstad.Name = "txtmüstad";
+            this.txtmüstad.Size = new System.Drawing.Size(100, 20);
+            this.txtmüstad.TabIndex = 1;
+            // 
+            // txtmüstsoyad
+            // 
+            this.txtmüstsoyad.Location = new System.Drawing.Point(93, 91);
+            this.txtmüstsoyad.Name = "txtmüstsoyad";
+            this.txtmüstsoyad.Size = new System.Drawing.Size(100, 20);
+            this.txtmüstsoyad.TabIndex = 3;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 94);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(81, 13);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Müşteri SoyAd :";
+            // 
+            // txtmüstid
+            // 
+            this.txtmüstid.Location = new System.Drawing.Point(93, 30);
+            this.txtmüstid.Name = "txtmüstid";
+            this.txtmüstid.Size = new System.Drawing.Size(100, 20);
+            this.txtmüstid.TabIndex = 5;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(1, 119);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(86, 13);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Müşteri Telefon :";
+            // 
+            // txtmüsttelefon
+            // 
+            this.txtmüsttelefon.Location = new System.Drawing.Point(93, 117);
+            this.txtmüsttelefon.Name = "txtmüsttelefon";
+            this.txtmüsttelefon.Size = new System.Drawing.Size(100, 20);
+            this.txtmüsttelefon.TabIndex = 7;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(26, 33);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(61, 13);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Müşteri ID :";
+            // 
+            // btnekle
+            // 
+            this.btnekle.Location = new System.Drawing.Point(93, 178);
+            this.btnekle.Name = "btnekle";
+            this.btnekle.Size = new System.Drawing.Size(75, 23);
+            this.btnekle.TabIndex = 8;
+            this.btnekle.Text = "ekle";
+            this.btnekle.UseVisualStyleBackColor = true;
+            this.btnekle.Click += new System.EventHandler(this.btnekle_Click);
+            // 
+            // btnguncelle
+            // 
+            this.btnguncelle.Location = new System.Drawing.Point(174, 207);
+            this.btnguncelle.Name = "btnguncelle";
+            this.btnguncelle.Size = new System.Drawing.Size(75, 23);
+            this.btnguncelle.TabIndex = 9;
+            this.btnguncelle.Text = "guncelle";
+            this.btnguncelle.UseVisualStyleBackColor = true;
+            // 
+            // btnsil
+            // 
+            this.btnsil.Location = new System.Drawing.Point(93, 207);
+            this.btnsil.Name = "btnsil";
+            this.btnsil.Size = new System.Drawing.Size(75, 23);
+            this.btnsil.TabIndex = 10;
+            this.btnsil.Text = "sil";
+            this.btnsil.UseVisualStyleBackColor = true;
+            // 
+            // btnlistele
+            // 
+            this.btnlistele.Location = new System.Drawing.Point(174, 178);
+            this.btnlistele.Name = "btnlistele";
+            this.btnlistele.Size = new System.Drawing.Size(75, 23);
+            this.btnlistele.TabIndex = 11;
+            this.btnlistele.Text = "listele";
+            this.btnlistele.UseVisualStyleBackColor = true;
+            // 
             // müşteriler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(979, 482);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Name = "müşteriler";
             this.Text = "müşteriler";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -215,5 +355,18 @@ namespace Market_otomasyon
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtmüstid;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtmüstsoyad;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtmüstad;
+        private System.Windows.Forms.TextBox txtmüsttelefon;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnlistele;
+        private System.Windows.Forms.Button btnsil;
+        private System.Windows.Forms.Button btnguncelle;
+        private System.Windows.Forms.Button btnekle;
     }
 }

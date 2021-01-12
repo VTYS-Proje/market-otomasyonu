@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Market_otomasyon.Context;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,9 +25,29 @@ namespace Market_otomasyon
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Ana_menu ANA = new Ana_menu();
+            var context = new MarketDbContext();
+            var cevap = context.Satıcıs.Where(i => i.KullaniciAdi == txtKullaniciAdi.Text && i.Sifre == txtSifre.Text).FirstOrDefault();
+            if (cevap != null)
+            {
+                Ana_menu ANA = new Ana_menu();
+                ANA.Show();
+                this.Hide();
+
+
+
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı Adı veya Şifrenizi yanlış girdiniz.");
+                txtKullaniciAdi.Text = String.Empty;
+                txtSifre.Text = String.Empty;
+
+
+            }
+            
+            /*Ana_menu ANA = new Ana_menu();
             ANA.Show();
-            this.Hide();
+            this.Hide();*/
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -41,6 +62,11 @@ namespace Market_otomasyon
             Şifre_sıfırlama şifre = new Şifre_sıfırlama();
             şifre.Show();
             this.Hide();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Market_otomasyon.Moduls.Entity
 {
-    class Borc
+    public class Borc
     {
+        public int Id { get; set; }
         public int IrsaliyeNo { get; set; }
         public int TedarikciNo { get; set; }
         public int Odeme { get; set; }

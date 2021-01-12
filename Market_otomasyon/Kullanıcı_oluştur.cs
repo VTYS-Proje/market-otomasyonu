@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Market_otomasyon.Context;
+using Market_otomasyon.Moduls.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +29,31 @@ namespace Market_otomasyon
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var context = new MarketDbContext();
+            context.Satıcıs.Add(new Satici
+            {
+                KullaniciAdi = txtkullaniciadi.Text,
+                SaticiAd = txtisim.Text,
+                SaticiSoyad = txtsoyisim.Text,
+                Sifre = txtsifre.Text
+            });
+            var cevap= context.SaveChanges();
+            if (cevap>0)
+            {
+                MessageBox.Show("Kullanıcı başarıyla oluşturulmuştur.");
+                var satici = context.Satıcıs.Where(i => i.KullaniciAdi == txtkullaniciadi.Text).FirstOrDefault();
+                lblno.Text = satici.SaticiID.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı oluştururken hata oldu.");
+
+            }
+            
         }
     }
 }
