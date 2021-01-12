@@ -12,10 +12,22 @@ namespace Market_otomasyon.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"server=LAPTOP-9RQDBGSD\SQLEXPRESS;database=MarketProje;trusted_connection=true;");
+            optionsBuilder.UseSqlServer(@"server=DESKTOP-S41BM0N;database=MarketProje;trusted_connection=true;");
         }
         public DbSet<Borc> Borcs { get; set; }
         public DbSet<Musteri> Musteris { get; set; }
         public DbSet<Satici> Satıcıs { get; set; }
+
+        public DbSet<PesinSatis> PesinSatis { get; set; }
+        public DbSet<Satis> Satis { get; set; }
+        public DbSet<Stok> Stoks  { get; set; }
+        public DbSet<Tedarikci> Tedarikcis { get; set; }
+        public DbSet<TedarikciBorc> TedarikciBorcs { get; set; }
+        public DbSet<VeresiyeSatis> VeresiyeSatis { get; set; }
+
+
+
+
+
     }
 }

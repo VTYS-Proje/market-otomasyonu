@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Market_otomasyon.Moduls.Entity
 {
-    public class Satıs
+    public class Satis
     {
-       
+        public int SatisId { get; set; }
         public int FaturaID { get; set; }
         public int MusteriID { get; set; }
         public int UrunID { get; set; }

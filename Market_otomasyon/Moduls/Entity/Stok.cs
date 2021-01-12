@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Market_otomasyon.Moduls.Entity
 {
-    class Stok
+    public class Stok
     {
+        public int StokId { get; set; }
         public int UrunKodu { get; set; }
         public int Barkod { get; set; }
         public string Cesit { get; set; }

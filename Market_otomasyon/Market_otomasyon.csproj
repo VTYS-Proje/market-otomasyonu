@@ -326,6 +326,22 @@
     <Compile Include="Migrations\20210111194614_third.designer.cs">
       <DependentUpon>20210111194614_third.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20210112162501_aaa.cs" />
+    <Compile Include="Migrations\20210112162501_aaa.designer.cs">
+      <DependentUpon>20210112162501_aaa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20210112162853_aaaa.cs" />
+    <Compile Include="Migrations\20210112162853_aaaa.designer.cs">
+      <DependentUpon>20210112162853_aaaa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20210112164819_deneme.cs" />
+    <Compile Include="Migrations\20210112164819_deneme.designer.cs">
+      <DependentUpon>20210112164819_deneme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20210112170024_deneme3.cs" />
+    <Compile Include="Migrations\20210112170024_deneme3.designer.cs">
+      <DependentUpon>20210112170024_deneme3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\MarketDbContextModelSnapshot.cs" />
     <Compile Include="Moduls\Entity\Borc.cs" />
     <Compile Include="Moduls\Entity\Musteri.cs" />
