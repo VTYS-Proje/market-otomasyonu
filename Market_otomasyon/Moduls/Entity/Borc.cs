@@ -17,3 +17,4 @@ namespace Market_otomasyon.Moduls.Entity
         //public double ToplamBorc{ get; set; }
 
     }
+}

@@ -15,5 +15,4 @@ namespace Market_otomasyon.Moduls.Entity
         public double Tutar { get; set; }
     }
 
-    }
 }

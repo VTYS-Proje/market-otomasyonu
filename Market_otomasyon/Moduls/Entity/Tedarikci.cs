@@ -9,7 +9,6 @@ namespace Market_otomasyon.Moduls.Entity
 
     public class Tedarikci
     {
-        [Key]
         public int TedarikciID { get; set; }
         public string Tedarikcisim { get; set; }
     }
