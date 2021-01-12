@@ -21,7 +21,7 @@ namespace Market_otomasyon.Migrations
 
             modelBuilder.Entity("Market_otomasyon.Moduls.Entity.Borc", b =>
                 {
-                    b.Property<int>("BorcId")
+                    b.Property<int>("BorcID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -38,7 +38,7 @@ namespace Market_otomasyon.Migrations
                     b.Property<double>("Tutar")
                         .HasColumnType("float");
 
-                    b.HasKey("BorcId");
+                    b.HasKey("BorcID");
 
                     b.ToTable("Borcs");
                 });
@@ -66,7 +66,7 @@ namespace Market_otomasyon.Migrations
 
             modelBuilder.Entity("Market_otomasyon.Moduls.Entity.PesinSatis", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -80,7 +80,7 @@ namespace Market_otomasyon.Migrations
                     b.Property<double>("Tutar")
                         .HasColumnType("float");
 
-                    b.HasKey("Id");
+                    b.HasKey("ID");
 
                     b.ToTable("PesinSatis");
                 });
@@ -111,7 +111,7 @@ namespace Market_otomasyon.Migrations
 
             modelBuilder.Entity("Market_otomasyon.Moduls.Entity.Satis", b =>
                 {
-                    b.Property<int>("SatisId")
+                    b.Property<int>("SatisID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -140,14 +140,14 @@ namespace Market_otomasyon.Migrations
                     b.Property<int>("UrunID")
                         .HasColumnType("int");
 
-                    b.HasKey("SatisId");
+                    b.HasKey("SatisID");
 
                     b.ToTable("Satis");
                 });
 
             modelBuilder.Entity("Market_otomasyon.Moduls.Entity.Stok", b =>
                 {
-                    b.Property<int>("StokId")
+                    b.Property<int>("StokID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -173,9 +173,9 @@ namespace Market_otomasyon.Migrations
                     b.Property<int>("UrunKodu")
                         .HasColumnType("int");
 
-                    b.HasKey("StokId");
+                    b.HasKey("StokID");
 
-                    b.ToTable("Stok");
+                    b.ToTable("Stoks");
                 });
 
             modelBuilder.Entity("Market_otomasyon.Moduls.Entity.Tedarikci", b =>
@@ -195,7 +195,7 @@ namespace Market_otomasyon.Migrations
 
             modelBuilder.Entity("Market_otomasyon.Moduls.Entity.TedarikciBorc", b =>
                 {
-                    b.Property<int>("TedarikciBorcId")
+                    b.Property<int>("TedarikciBorcID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -215,7 +215,7 @@ namespace Market_otomasyon.Migrations
                     b.Property<string>("Tedarikcisim")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("TedarikciBorcId");
+                    b.HasKey("TedarikciBorcID");
 
                     b.ToTable("TedarikciBorcs");
                 });

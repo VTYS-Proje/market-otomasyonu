@@ -9,7 +9,7 @@ namespace Market_otomasyon.Moduls.Entity
 {
     public class Borc
     {
-        public int BorcId { get; set; }
+        public int BorcID { get; set; }
         public int MusteriID { get; set; }
        // public string MusteriAd { get; set; }
        // public string MusteriSoyad { get; set; }

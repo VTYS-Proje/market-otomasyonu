@@ -159,6 +159,8 @@
             this.txtsifre.Name = "txtsifre";
             this.txtsifre.Size = new System.Drawing.Size(134, 20);
             this.txtsifre.TabIndex = 48;
+            this.txtsifre.UseSystemPasswordChar = true;
+            this.txtsifre.TextChanged += new System.EventHandler(this.txtsifre_TextChanged);
             // 
             // txtisim
             // 

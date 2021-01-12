@@ -3,15 +3,46 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Market_otomasyon.Migrations
 {
-    public partial class deneme3 : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Borcs",
+                columns: table => new
+                {
+                    BorcID = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    MusteriID = table.Column<int>(nullable: false),
+                    Tutar = table.Column<double>(nullable: false),
+                    SatinAlmaTarihi = table.Column<int>(nullable: false),
+                    MusteriOdeme = table.Column<double>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Borcs", x => x.BorcID);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Musteris",
+                columns: table => new
+                {
+                    MusteriID = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    MusteriAd = table.Column<string>(nullable: true),
+                    MusteriSoyad = table.Column<string>(nullable: true),
+                    TelefonNo = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Musteris", x => x.MusteriID);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "PesinSatis",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
+                    ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FaturaID = table.Column<int>(nullable: false),
                     MusteriID = table.Column<int>(nullable: false),
@@ -19,14 +50,30 @@ namespace Market_otomasyon.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_PesinSatis", x => x.Id);
+                    table.PrimaryKey("PK_PesinSatis", x => x.ID);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Satıcıs",
+                columns: table => new
+                {
+                    SaticiID = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    SaticiAd = table.Column<string>(nullable: true),
+                    SaticiSoyad = table.Column<string>(nullable: true),
+                    KullaniciAdi = table.Column<string>(nullable: true),
+                    Sifre = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Satıcıs", x => x.SaticiID);
                 });
 
             migrationBuilder.CreateTable(
                 name: "Satis",
                 columns: table => new
                 {
-                    SatisId = table.Column<int>(nullable: false)
+                    SatisID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FaturaID = table.Column<int>(nullable: false),
                     MusteriID = table.Column<int>(nullable: false),
@@ -39,14 +86,14 @@ namespace Market_otomasyon.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Satis", x => x.SatisId);
+                    table.PrimaryKey("PK_Satis", x => x.SatisID);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Stok",
+                name: "Stoks",
                 columns: table => new
                 {
-                    StokId = table.Column<int>(nullable: false)
+                    StokID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UrunKodu = table.Column<int>(nullable: false),
                     Barkod = table.Column<int>(nullable: false),
@@ -58,14 +105,14 @@ namespace Market_otomasyon.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Stok", x => x.StokId);
+                    table.PrimaryKey("PK_Stoks", x => x.StokID);
                 });
 
             migrationBuilder.CreateTable(
                 name: "TedarikciBorcs",
                 columns: table => new
                 {
-                    TedarikciBorcId = table.Column<int>(nullable: false)
+                    TedarikciBorcID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     TedarikciID = table.Column<int>(nullable: false),
                     Tedarikcisim = table.Column<string>(nullable: true),
@@ -75,7 +122,7 @@ namespace Market_otomasyon.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_TedarikciBorcs", x => x.TedarikciBorcId);
+                    table.PrimaryKey("PK_TedarikciBorcs", x => x.TedarikciBorcID);
                 });
 
             migrationBuilder.CreateTable(
@@ -112,13 +159,22 @@ namespace Market_otomasyon.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "Borcs");
+
+            migrationBuilder.DropTable(
+                name: "Musteris");
+
+            migrationBuilder.DropTable(
                 name: "PesinSatis");
+
+            migrationBuilder.DropTable(
+                name: "Satıcıs");
 
             migrationBuilder.DropTable(
                 name: "Satis");
 
             migrationBuilder.DropTable(
-                name: "Stok");
+                name: "Stoks");
 
             migrationBuilder.DropTable(
                 name: "TedarikciBorcs");

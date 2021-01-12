@@ -55,5 +55,10 @@ namespace Market_otomasyon
             }
             
         }
+
+        private void txtsifre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

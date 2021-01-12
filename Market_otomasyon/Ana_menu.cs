@@ -62,7 +62,7 @@ namespace Market_otomasyon
         {
             müşteriler müşteri = new müşteriler();
             müşteri.Show();
-            
+            this.Hide();
         }
     }
 }
