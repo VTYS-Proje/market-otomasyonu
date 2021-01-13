@@ -26,22 +26,28 @@ namespace Market_otomasyon
 
         private void btnekle_Click(object sender, EventArgs e)
         {
-            var context = new MarketDbContext();
-            context.Musteris.Add(new Musteri
-            {
-                MusteriAd = txtmüstad.Text,
-                MusteriSoyad = txtmüstsoyad.Text,
-                TelefonNo = txtmüsttelefon.Text
-            });
-            var cevap = context.SaveChanges();
-            if (cevap > 0)
-            {
-                MessageBox.Show("Müşteri sisteme başarıyla kaydedilmiştir.");
-            }
-            else
-            {
-                MessageBox.Show("Müşteri sisteme kaydedilememiştir.");
-            }
+            Yeni_Müsteri yenimüsteri = new Yeni_Müsteri();
+            yenimüsteri.Show();
+            //this.Hide();
+        }
+
+        private void btnsil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Ana_menu ANA = new Ana_menu();
+            ANA.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Giris_ekrani giris = new Giris_ekrani();
+            giris.Show();
+            this.Hide();
         }
     }
 }

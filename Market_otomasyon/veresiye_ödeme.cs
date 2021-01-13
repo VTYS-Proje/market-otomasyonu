@@ -43,5 +43,12 @@ namespace Market_otomasyon
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Yeni_Müsteri yenimüsteri = new Yeni_Müsteri();
+            yenimüsteri.Show();
+            //this.Hide();
+        }
     }
 }
