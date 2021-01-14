@@ -34,13 +34,11 @@ namespace Market_otomasyon
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.mtel = new System.Windows.Forms.TextBox();
             this.msoyadı = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.madı = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.mid = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -71,13 +69,11 @@ namespace Market_otomasyon
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.mtel);
             this.groupBox1.Controls.Add(this.msoyadı);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.madı);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.mid);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(33, 147);
@@ -89,7 +85,7 @@ namespace Market_otomasyon
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(160, 177);
+            this.button1.Location = new System.Drawing.Point(172, 170);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 21;
@@ -97,20 +93,10 @@ namespace Market_otomasyon
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(14, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 16);
-            this.label1.TabIndex = 13;
-            this.label1.Text = " ID : ";
-            // 
             // mtel
             // 
             this.mtel.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.mtel.Location = new System.Drawing.Point(110, 140);
+            this.mtel.Location = new System.Drawing.Point(122, 133);
             this.mtel.Name = "mtel";
             this.mtel.Size = new System.Drawing.Size(119, 20);
             this.mtel.TabIndex = 14;
@@ -118,7 +104,7 @@ namespace Market_otomasyon
             // msoyadı
             // 
             this.msoyadı.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.msoyadı.Location = new System.Drawing.Point(110, 103);
+            this.msoyadı.Location = new System.Drawing.Point(122, 96);
             this.msoyadı.Name = "msoyadı";
             this.msoyadı.Size = new System.Drawing.Size(119, 20);
             this.msoyadı.TabIndex = 20;
@@ -127,7 +113,7 @@ namespace Market_otomasyon
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(14, 107);
+            this.label2.Location = new System.Drawing.Point(26, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 16);
             this.label2.TabIndex = 15;
@@ -136,7 +122,7 @@ namespace Market_otomasyon
             // madı
             // 
             this.madı.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.madı.Location = new System.Drawing.Point(110, 66);
+            this.madı.Location = new System.Drawing.Point(122, 59);
             this.madı.Name = "madı";
             this.madı.Size = new System.Drawing.Size(119, 20);
             this.madı.TabIndex = 19;
@@ -145,25 +131,17 @@ namespace Market_otomasyon
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(14, 145);
+            this.label3.Location = new System.Drawing.Point(26, 138);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 15);
             this.label3.TabIndex = 16;
             this.label3.Text = "Telefon No : ";
             // 
-            // mid
-            // 
-            this.mid.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.mid.Location = new System.Drawing.Point(110, 31);
-            this.mid.Name = "mid";
-            this.mid.Size = new System.Drawing.Size(119, 20);
-            this.mid.TabIndex = 18;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(14, 70);
+            this.label4.Location = new System.Drawing.Point(26, 63);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 16);
             this.label4.TabIndex = 17;
@@ -194,13 +172,11 @@ namespace Market_otomasyon
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox mtel;
         private System.Windows.Forms.TextBox msoyadı;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox madı;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox mid;
         private System.Windows.Forms.Label label4;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Market_otomasyon.Context;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace Market_otomasyon
 {
     public partial class Ana_menu : Form
     {
+        DataTable tablo = new DataTable();
+        double tutar = 0;
         public Ana_menu()
         {
             InitializeComponent();
@@ -46,10 +49,6 @@ namespace Market_otomasyon
 
         }
 
-        private void Ana_menu_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void button9_Click(object sender, EventArgs e)
         {
@@ -78,5 +77,33 @@ namespace Market_otomasyon
             tedarikci.Show();
             this.Hide();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            var barkodNo = textBox1.Text;
+            using (var bb = new MarketDbContext() )
+            {
+                var urun = bb.Stoks.FirstOrDefault(a => a.Barkod.ToString() == barkodNo);
+                if (urun != null )
+                {
+                    tablo.Rows.Add(urun.UrunAdi);
+                    dataGridView1.DataSource = tablo;
+                }
+                else
+                {
+                    MessageBox.Show("Ürün Bulunamadı");
+                }
+                tutar += urun.BirimGirdiFiyat;
+                textBox2.Text = tutar.ToString();
+            }
+        }
+
+        private void Ana_menu_Load(object sender, EventArgs e)
+        {
+            tablo.Columns.Add("Ürün Adı", typeof(string));
+            // tablo.Columns.Add("Miktar", typeof(int));
+            tablo.Columns.Add("Fiyat", typeof(double));
+        }
     }
+
 }
