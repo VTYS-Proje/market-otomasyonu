@@ -64,5 +64,19 @@ namespace Market_otomasyon
             müşteri.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ÜrünStok ürün = new ÜrünStok();
+            ürün.Show();
+            this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            TedarikçiBilgi tedarikci= new TedarikçiBilgi();
+            tedarikci.Show();
+            this.Hide();
+        }
     }
 }

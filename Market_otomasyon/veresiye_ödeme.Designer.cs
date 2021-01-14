@@ -36,16 +36,11 @@ namespace Market_otomasyon
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -53,10 +48,12 @@ namespace Market_otomasyon
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,7 +65,7 @@ namespace Market_otomasyon
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(670, 379);
+            this.button1.Location = new System.Drawing.Point(390, 379);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(171, 55);
             this.button1.TabIndex = 21;
@@ -128,40 +125,11 @@ namespace Market_otomasyon
             this.label1.TabIndex = 16;
             this.label1.Text = "VERESİYE ÖDEME EKRANI";
             // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Adet";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 75;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Fiyat";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 75;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.HeaderText = "Ürün Adı";
-            this.Column2.Name = "Column2";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Barkod";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 160;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
             this.dataGridView1.Location = new System.Drawing.Point(23, 95);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -183,9 +151,11 @@ namespace Market_otomasyon
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.textBox4);
+            this.groupBox4.Controls.Add(this.label5);
+            this.groupBox4.Controls.Add(this.comboBox1);
             this.groupBox4.Controls.Add(this.button5);
             this.groupBox4.Controls.Add(this.button4);
-            this.groupBox4.Controls.Add(this.dataGridView2);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox4.Location = new System.Drawing.Point(23, 307);
             this.groupBox4.Name = "groupBox4";
@@ -196,9 +166,9 @@ namespace Market_otomasyon
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(32, 154);
+            this.button5.Location = new System.Drawing.Point(32, 140);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(92, 23);
+            this.button5.Size = new System.Drawing.Size(79, 33);
             this.button5.TabIndex = 18;
             this.button5.Text = "YENİ EKLE";
             this.button5.UseVisualStyleBackColor = true;
@@ -206,21 +176,12 @@ namespace Market_otomasyon
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(140, 154);
+            this.button4.Location = new System.Drawing.Point(132, 140);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(92, 23);
+            this.button4.Size = new System.Drawing.Size(80, 33);
             this.button4.TabIndex = 17;
             this.button4.Text = "SEÇ";
             this.button4.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.LightSteelBlue;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(32, 32);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(200, 107);
-            this.dataGridView2.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -229,7 +190,7 @@ namespace Market_otomasyon
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(312, 307);
+            this.groupBox1.Location = new System.Drawing.Point(598, 307);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(243, 192);
             this.groupBox1.TabIndex = 26;
@@ -286,11 +247,38 @@ namespace Market_otomasyon
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(600, 379);
+            this.pictureBox1.Location = new System.Drawing.Point(320, 379);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(68, 55);
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(32, 109);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(180, 21);
+            this.comboBox1.TabIndex = 19;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(29, 52);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(101, 16);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "İşlem Tarihi : ";
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox4.Location = new System.Drawing.Point(32, 73);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(180, 20);
+            this.textBox4.TabIndex = 21;
             // 
             // veresiye_ödeme
             // 
@@ -314,7 +302,7 @@ namespace Market_otomasyon
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.groupBox4.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -332,16 +320,11 @@ namespace Market_otomasyon
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox textBox3;
@@ -349,5 +332,8 @@ namespace Market_otomasyon
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label5;
     }
 }
