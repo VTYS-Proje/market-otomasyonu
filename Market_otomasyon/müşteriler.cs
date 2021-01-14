@@ -49,5 +49,33 @@ namespace Market_otomasyon
             giris.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ÜrünStok ürün = new ÜrünStok();
+            ürün.Show();
+            this.Hide();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            MarketDbContext db = new MarketDbContext();
+            var müsteri = db.Musteris.ToList();
+            dataGridView1.DataSource = müsteri;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            MarketDbContext aa = new MarketDbContext();
+            var borc = aa.Borcs.ToList();
+            dataGridView1.DataSource = borc;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            TedarikçiBilgi tedarikci = new TedarikçiBilgi();
+            tedarikci.Show();
+            this.Hide();
+        }
     }
 }
