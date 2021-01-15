@@ -44,7 +44,6 @@ namespace Market_otomasyon
             this.button12 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -211,23 +210,13 @@ namespace Market_otomasyon
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(139, 62);
+            this.button1.Location = new System.Drawing.Point(123, 74);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 35);
+            this.button1.Size = new System.Drawing.Size(96, 54);
             this.button1.TabIndex = 7;
-            this.button1.Text = "Dosya Seç";
+            this.button1.Text = "Dosya Seç\r\n Ve\r\n Stoğa Ekle";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(139, 103);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 35);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Stok Ekle";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -260,7 +249,6 @@ namespace Market_otomasyon
             this.ClientSize = new System.Drawing.Size(983, 557);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
@@ -290,7 +278,6 @@ namespace Market_otomasyon
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ListBox listBox1;
