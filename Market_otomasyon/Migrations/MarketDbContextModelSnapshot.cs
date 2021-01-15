@@ -161,8 +161,11 @@ namespace Market_otomasyon.Migrations
                     b.Property<string>("Cesit")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Miktar")
+                    b.Property<int>("IrsaliyeNo")
                         .HasColumnType("int");
+
+                    b.Property<double>("SatisFiyati")
+                        .HasColumnType("float");
 
                     b.Property<int>("StokMiktari")
                         .HasColumnType("int");

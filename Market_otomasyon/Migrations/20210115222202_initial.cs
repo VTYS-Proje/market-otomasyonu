@@ -101,7 +101,8 @@ namespace Market_otomasyon.Migrations
                     StokMiktari = table.Column<int>(nullable: false),
                     UrunAdi = table.Column<string>(nullable: true),
                     BirimGirdiFiyat = table.Column<double>(nullable: false),
-                    Miktar = table.Column<int>(nullable: false)
+                    SatisFiyati = table.Column<double>(nullable: false),
+                    IrsaliyeNo = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

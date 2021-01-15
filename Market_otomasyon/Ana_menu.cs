@@ -34,13 +34,13 @@ namespace Market_otomasyon
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
 
-            
+
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace Market_otomasyon
         {
             groupBox8.Show();
 
-            
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -72,7 +72,7 @@ namespace Market_otomasyon
 
         private void button6_Click(object sender, EventArgs e)
         {
-            TedarikçiBilgi tedarikci= new TedarikçiBilgi();
+            TedarikçiBilgi tedarikci = new TedarikçiBilgi();
             tedarikci.Show();
             this.Hide();
         }
@@ -80,14 +80,14 @@ namespace Market_otomasyon
         private void button7_Click(object sender, EventArgs e)
         {
             var barkodNo = textBox1.Text;
-            using (var bb = new MarketDbContext() )
+            using (var bb = new MarketDbContext())
             {
                 var urun = bb.Stoks.FirstOrDefault(a => a.Barkod.ToString() == barkodNo);
-                if (urun != null )
+                if (urun != null)
                 {
-                    tablo.Rows.Add(urun.UrunKodu, urun.UrunAdi, urun.Cesit, urun.BirimGirdiFiyat);
+                    tablo.Rows.Add(urun.UrunKodu, urun.UrunAdi, urun.Cesit, urun.SatisFiyati);
                     dataGridView1.DataSource = tablo;
-                    tutar += urun.BirimGirdiFiyat;
+                    tutar += urun.SatisFiyati;
                     textBox2.Text = tutar.ToString();
                     textBox1.Clear();
                 }
@@ -95,8 +95,8 @@ namespace Market_otomasyon
                 {
                     MessageBox.Show("Ürün Bulunamadı");
                 }
-                tutar += urun.BirimGirdiFiyat;
-                textBox2.Text = tutar.ToString();
+                // tutar += urun.SatisFiyati;
+                // textBox2.Text = tutar.ToString();
             }
             //textBox1.Clear();
         }
@@ -110,12 +110,12 @@ namespace Market_otomasyon
             tablo.Columns.Add("Çeşidi", typeof(string));
             tablo.Columns.Add("Fiyatı", typeof(double));
 
-           
+
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -138,8 +138,8 @@ namespace Market_otomasyon
 
         private void button10_Click_1(object sender, EventArgs e)
         {
-            int para;
-            para = int.Parse(textBox5.Text) -  int.Parse(textBox2.Text);
+            double para;
+            para = double.Parse(textBox5.Text) - double.Parse(textBox2.Text);
             textBox4.Text = para.ToString();
         }
 
@@ -163,18 +163,18 @@ namespace Market_otomasyon
         {
             groupBox3.Show();
 
-           
-               /* if (dataGridView1.SelectedRows.Count > 0)
-                {
-                    dataGridView1.Rows.RemoveAt(dataGridView1.SelectedRows[0].Index);
-                }
-                else
-                {
-                    MessageBox.Show("Lüffen silinecek satırı seçin.");
-                } */
-            
-               
-           
+
+            /* if (dataGridView1.SelectedRows.Count > 0)
+             {
+                 dataGridView1.Rows.RemoveAt(dataGridView1.SelectedRows[0].Index);
+             }
+             else
+             {
+                 MessageBox.Show("Lüffen silinecek satırı seçin.");
+             } */
+
+
+
         }
 
         private void button14_Click_1(object sender, EventArgs e)
@@ -186,7 +186,7 @@ namespace Market_otomasyon
                 textBox6.Clear();
                 groupBox3.Hide();
             }
-            
+
             else
             {
                 MessageBox.Show("Yanlış Şifre Girdiniz");

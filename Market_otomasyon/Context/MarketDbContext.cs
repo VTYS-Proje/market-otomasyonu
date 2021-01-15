@@ -12,7 +12,7 @@ namespace Market_otomasyon.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"server=LAPTOP-9RQDBGSD\SQLEXPRESS;database=MarketProje;trusted_connection=true;");
+            optionsBuilder.UseSqlServer(@"server=DESKTOP-5TV477E\SQLEXPRESS;database=MarketProje;trusted_connection=true;");
         }
         public DbSet<Borc> Borcs { get; set; }
         public DbSet<Musteri> Musteris { get; set; }

@@ -83,44 +83,48 @@ namespace Market_otomasyon
 
                     int count = 0;
 
-                  
                     if (count == 0)
                     {
                         ürünn.UrunKodu = Convert.ToInt32(itemler[0]);
-                            count = count + 1;
-                        }
+                        ürünn.Barkod = ürünn.BarkodOlustur();
+                        count = count + 1;
+                    }
 
                     if (count == 1)
                     {
-                        ürünn.Barkod = Convert.ToInt32(itemler[1]);
+                        ürünn.Cesit = itemler[1];
                         count = count + 1;
                     }
 
                     if (count == 2)
                     {
-                        ürünn.Cesit = itemler[2];
+                        ürünn.StokMiktari = Convert.ToInt32(itemler[2]);
                         count = count + 1;
                     }
 
                     if (count == 3)
                     {
-                        ürünn.StokMiktari = Convert.ToInt32(itemler[3]);
+                        ürünn.UrunAdi = itemler[3];
                         count = count + 1;
                     }
 
                     if (count == 4)
                     {
-                        ürünn.UrunAdi = itemler[4];
+                        ürünn.BirimGirdiFiyat = Convert.ToDouble(itemler[4]);
+                        ürünn.SatisFiyati = ürünn.SatisFiyatiOlustur();
+                        //context.Stoks.Add(ürünn);
+                        //context.SaveChanges();
                         count = count + 1;
                     }
 
                     if (count == 5)
                     {
-                        ürünn.BirimGirdiFiyat = Convert.ToInt32(itemler[5]);
+                        ürünn.IrsaliyeNo = Convert.ToInt32(itemler[5]);
                         context.Stoks.Add(ürünn);
                         context.SaveChanges();
-                        count = count + 1;
+                        count = count + 1; ;
                     }
+
 
 
                     count = count + 1;
