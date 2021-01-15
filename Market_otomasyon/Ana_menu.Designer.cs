@@ -69,6 +69,12 @@
             this.label17 = new System.Windows.Forms.Label();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.button14 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -77,6 +83,7 @@
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox8.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -276,6 +283,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.button11);
+            this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.button7);
@@ -283,7 +292,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.groupBox1.Location = new System.Drawing.Point(782, 84);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(201, 159);
+            this.groupBox1.Size = new System.Drawing.Size(201, 208);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Barkod No";
@@ -316,7 +325,7 @@
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Location = new System.Drawing.Point(782, 263);
+            this.groupBox2.Location = new System.Drawing.Point(786, 298);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(201, 154);
             this.groupBox2.TabIndex = 11;
@@ -531,12 +540,76 @@
             this.button13.Text = "ÖDE";
             this.button13.UseVisualStyleBackColor = true;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(7, 168);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(0, 15);
+            this.label14.TabIndex = 8;
+            // 
+            // button11
+            // 
+            this.button11.ForeColor = System.Drawing.Color.Black;
+            this.button11.Location = new System.Drawing.Point(6, 151);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(187, 32);
+            this.button11.TabIndex = 9;
+            this.button11.Text = "Seçilen Ürünü İptal Et";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.textBox6);
+            this.groupBox3.Controls.Add(this.button14);
+            this.groupBox3.Controls.Add(this.label15);
+            this.groupBox3.Location = new System.Drawing.Point(258, 140);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(234, 170);
+            this.groupBox3.TabIndex = 47;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Satıcı Onay";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(36, 71);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.PasswordChar = '*';
+            this.textBox6.Size = new System.Drawing.Size(153, 20);
+            this.textBox6.TabIndex = 5;
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button14.ForeColor = System.Drawing.Color.DarkGreen;
+            this.button14.Location = new System.Drawing.Point(77, 97);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(75, 23);
+            this.button14.TabIndex = 4;
+            this.button14.Text = "ONAYLA";
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click_1);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label15.Location = new System.Drawing.Point(18, 52);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(209, 16);
+            this.label15.TabIndex = 3;
+            this.label15.Text = "LÜTFEN ŞİFRENİZİ GİRİNİZ :";
+            // 
             // Ana_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(995, 690);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label9);
@@ -564,6 +637,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -611,6 +686,12 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Label label15;
     }
 }
 //deneme 12

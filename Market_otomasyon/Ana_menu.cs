@@ -87,6 +87,9 @@ namespace Market_otomasyon
                 {
                     tablo.Rows.Add(urun.UrunKodu, urun.UrunAdi, urun.Cesit, urun.BirimGirdiFiyat);
                     dataGridView1.DataSource = tablo;
+                    tutar += urun.BirimGirdiFiyat;
+                    textBox2.Text = tutar.ToString();
+                    textBox1.Clear();
                 }
                 else
                 {
@@ -95,10 +98,12 @@ namespace Market_otomasyon
                 tutar += urun.BirimGirdiFiyat;
                 textBox2.Text = tutar.ToString();
             }
+            //textBox1.Clear();
         }
 
         private void Ana_menu_Load(object sender, EventArgs e)
         {
+            groupBox3.Hide();
             groupBox8.Hide();
             tablo.Columns.Add("Ürün Kodu", typeof(int));
             tablo.Columns.Add("Ürün Adı", typeof(string));
@@ -152,6 +157,41 @@ namespace Market_otomasyon
         private void label12_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            groupBox3.Show();
+
+           
+               /* if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    dataGridView1.Rows.RemoveAt(dataGridView1.SelectedRows[0].Index);
+                }
+                else
+                {
+                    MessageBox.Show("Lüffen silinecek satırı seçin.");
+                } */
+            
+               
+           
+        }
+
+        private void button14_Click_1(object sender, EventArgs e)
+        {
+            if (int.Parse(textBox6.Text) == 123)
+            {
+                MessageBox.Show("Seçilen Satır Listeden Silindi");
+                dataGridView1.Rows.RemoveAt(dataGridView1.SelectedRows[0].Index);
+                textBox6.Clear();
+                groupBox3.Hide();
+            }
+            
+            else
+            {
+                MessageBox.Show("Yanlış Şifre Girdiniz");
+                textBox6.Clear();
+            }
         }
     }
 
