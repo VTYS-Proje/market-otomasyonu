@@ -332,3 +332,7 @@ C:\Users\Lenovo\Source\Repos\market-otomasyonu\Market_otomasyon\obj\Debug\Market
 C:\Users\Lenovo\source\repos\market-otomasyonu\Market_otomasyon\obj\Debug\Market_otomasyon.Yeni_Müsteri.resources
 C:\Users\Lenovo\source\repos\market-otomasyonu\Market_otomasyon\obj\Debug\Market_otomasyon.ÜrünStok.resources
 C:\Users\Lenovo\source\repos\market-otomasyonu\Market_otomasyon\obj\Debug\Market_otomasyon.TedarikçiBilgi.resources
+C:\Users\MELTEM\Source\Repos\market-otomasyonu\Market_otomasyon\obj\Debug\Market_otomasyon.TedarikçiBilgi.resources
+C:\Users\MELTEM\Source\Repos\market-otomasyonu\Market_otomasyon\obj\Debug\Market_otomasyon.Yeni_Müsteri.resources
+C:\Users\MELTEM\Source\Repos\market-otomasyonu\Market_otomasyon\obj\Debug\Market_otomasyon.ÜrünStok.resources
+C:\Users\MELTEM\Source\Repos\market-otomasyonu\Market_otomasyon\obj\Debug\Market_otomasyon.Musteri_Sil.resources

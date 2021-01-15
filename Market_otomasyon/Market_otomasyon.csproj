@@ -314,9 +314,9 @@
     <Compile Include="Kullanıcı_oluştur.Designer.cs">
       <DependentUpon>Kullanıcı_oluştur.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20210114180246_initial.cs" />
-    <Compile Include="Migrations\20210114180246_initial.designer.cs">
-      <DependentUpon>20210114180246_initial.cs</DependentUpon>
+    <Compile Include="Migrations\20210115173427_initial.cs" />
+    <Compile Include="Migrations\20210115173427_initial.designer.cs">
+      <DependentUpon>20210115173427_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\MarketDbContextModelSnapshot.cs" />
     <Compile Include="Moduls\Entity\Borc.cs" />
@@ -328,6 +328,12 @@
     <Compile Include="Moduls\Entity\Stok.cs" />
     <Compile Include="Moduls\Entity\TedarikciBorc.cs" />
     <Compile Include="Moduls\Entity\VeresiyeSatis.cs" />
+    <Compile Include="Musteri_Sil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri_Sil.Designer.cs">
+      <DependentUpon>Musteri_Sil.cs</DependentUpon>
+    </Compile>
     <Compile Include="müşteriler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -380,6 +386,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Kullanıcı_oluştur.resx">
       <DependentUpon>Kullanıcı_oluştur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri_Sil.resx">
+      <DependentUpon>Musteri_Sil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="müşteriler.resx">
       <DependentUpon>müşteriler.cs</DependentUpon>

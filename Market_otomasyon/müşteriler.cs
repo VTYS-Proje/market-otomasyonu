@@ -33,7 +33,8 @@ namespace Market_otomasyon
 
         private void btnsil_Click(object sender, EventArgs e)
         {
-
+            Musteri_Sil musteri_Sil = new Musteri_Sil();
+            musteri_Sil.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
