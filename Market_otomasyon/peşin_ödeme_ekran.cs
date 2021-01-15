@@ -63,5 +63,10 @@ namespace Market_otomasyon
             menü.Show();
             this.Hide();
         }
+
+        private void peşin_ödeme_ekran_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -39,9 +39,8 @@ namespace Market_otomasyon
 
         private void button8_Click(object sender, EventArgs e)
         {
-            peşin_ödeme_ekran pesin = new peşin_ödeme_ekran();
-            pesin.Show();
-            this.Hide();
+
+            
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -52,9 +51,9 @@ namespace Market_otomasyon
 
         private void button9_Click(object sender, EventArgs e)
         {
-            veresiye_ödeme veresiye = new veresiye_ödeme();
-            veresiye.Show();
-            this.Hide();
+            groupBox8.Show();
+
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -86,7 +85,7 @@ namespace Market_otomasyon
                 var urun = bb.Stoks.FirstOrDefault(a => a.Barkod.ToString() == barkodNo);
                 if (urun != null )
                 {
-                    tablo.Rows.Add(urun.UrunAdi);
+                    tablo.Rows.Add(urun.UrunKodu, urun.UrunAdi, urun.Cesit, urun.BirimGirdiFiyat);
                     dataGridView1.DataSource = tablo;
                 }
                 else
@@ -100,9 +99,59 @@ namespace Market_otomasyon
 
         private void Ana_menu_Load(object sender, EventArgs e)
         {
+            groupBox8.Hide();
+            tablo.Columns.Add("Ürün Kodu", typeof(int));
             tablo.Columns.Add("Ürün Adı", typeof(string));
-            // tablo.Columns.Add("Miktar", typeof(int));
-            tablo.Columns.Add("Fiyat", typeof(double));
+            tablo.Columns.Add("Çeşidi", typeof(string));
+            tablo.Columns.Add("Fiyatı", typeof(double));
+
+           
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click_1(object sender, EventArgs e)
+        {
+            int para;
+            para = int.Parse(textBox5.Text) -  int.Parse(textBox2.Text);
+            textBox4.Text = para.ToString();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Yeni_Müsteri yenimüsteri = new Yeni_Müsteri();
+            yenimüsteri.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

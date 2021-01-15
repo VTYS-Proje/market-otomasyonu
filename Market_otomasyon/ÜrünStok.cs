@@ -8,11 +8,15 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Market_otomasyon.Moduls.Entity;
+using Market_otomasyon.Context;
+using System.Data.SqlClient;
 
 namespace Market_otomasyon
 {
     public partial class ÜrünStok : Form
     {
+
         public ÜrünStok()
         {
             InitializeComponent();
@@ -53,30 +57,71 @@ namespace Market_otomasyon
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /* OpenFileDialog file = new OpenFileDialog();
-            file.InitialDirectory = "C:";
-            file.Filter = "Text Dosyası |*.txt";
-            file.ShowDialog();
 
-            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                string strfileName = openFileDialog1.FileName;
-                StreamReader strreadr = File.OpenText(@strfileName);
-            } */
+        }
+
+      
+        
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 StreamReader oku = new StreamReader(openFileDialog1.FileName);
                 string satir = oku.ReadLine();
+
+
                 while (satir != null)
                 {
+                    string[] itemler = satir.Split(' ');
                     listBox1.Items.Add(satir);
                     satir = oku.ReadLine();
+
+                    Stok ürünn = new Stok();
+                    MarketDbContext context = new MarketDbContext();
+
+                    int count = 1;
+
+                    if (count == 1)
+                    {
+                        ürünn.UrunKodu = Convert.ToInt32(itemler[1]);
+                    }
+
+                    if (count == 2)
+                    {
+                        ürünn.Barkod = Convert.ToInt32(itemler[2]);
+                    }
+
+                    if (count == 3)
+                    {
+                        ürünn.Cesit = itemler[3];
+                    }
+
+                    if (count == 4)
+                    {
+                        ürünn.StokMiktari = Convert.ToInt32(itemler[4]);
+                    }
+
+                    if (count == 5)
+                    {
+                        ürünn.UrunAdi = itemler[5];
+                    }
+
+                    if (count == 6)
+                    {
+                        ürünn.BirimGirdiFiyat = Convert.ToInt32(itemler[6]);
+                        context.Stoks.Add(ürünn);
+                        context.SaveChanges();
+                    }
+
+
+                    count = count + 1;
+
                 }
+                }
+
             }
-
-
         }
-    }
 }
 

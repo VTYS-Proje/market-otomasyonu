@@ -77,5 +77,28 @@ namespace Market_otomasyon
             tedarikci.Show();
             this.Hide();
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            int paraüstü;
+            paraüstü = int.Parse(textBox1.Text) - int.Parse(textBox2.Text);
+            textBox3.Text = paraüstü.ToString();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            textBox1.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+

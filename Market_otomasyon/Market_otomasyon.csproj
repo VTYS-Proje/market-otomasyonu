@@ -314,9 +314,9 @@
     <Compile Include="Kullanıcı_oluştur.Designer.cs">
       <DependentUpon>Kullanıcı_oluştur.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20210112202208_initial.cs" />
-    <Compile Include="Migrations\20210112202208_initial.designer.cs">
-      <DependentUpon>20210112202208_initial.cs</DependentUpon>
+    <Compile Include="Migrations\20210114180246_initial.cs" />
+    <Compile Include="Migrations\20210114180246_initial.designer.cs">
+      <DependentUpon>20210114180246_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\MarketDbContextModelSnapshot.cs" />
     <Compile Include="Moduls\Entity\Borc.cs" />
