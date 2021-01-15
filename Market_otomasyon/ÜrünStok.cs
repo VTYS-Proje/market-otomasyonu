@@ -81,38 +81,45 @@ namespace Market_otomasyon
                     Stok ürünn = new Stok();
                     MarketDbContext context = new MarketDbContext();
 
-                    int count = 1;
+                    int count = 0;
+
+                  
+                    if (count == 0)
+                    {
+                        ürünn.UrunKodu = Convert.ToInt32(itemler[0]);
+                            count = count + 1;
+                        }
 
                     if (count == 1)
                     {
-                        ürünn.UrunKodu = Convert.ToInt32(itemler[1]);
+                        ürünn.Barkod = Convert.ToInt32(itemler[1]);
+                        count = count + 1;
                     }
 
                     if (count == 2)
                     {
-                        ürünn.Barkod = Convert.ToInt32(itemler[2]);
+                        ürünn.Cesit = itemler[2];
+                        count = count + 1;
                     }
 
                     if (count == 3)
                     {
-                        ürünn.Cesit = itemler[3];
+                        ürünn.StokMiktari = Convert.ToInt32(itemler[3]);
+                        count = count + 1;
                     }
 
                     if (count == 4)
                     {
-                        ürünn.StokMiktari = Convert.ToInt32(itemler[4]);
+                        ürünn.UrunAdi = itemler[4];
+                        count = count + 1;
                     }
 
                     if (count == 5)
                     {
-                        ürünn.UrunAdi = itemler[5];
-                    }
-
-                    if (count == 6)
-                    {
-                        ürünn.BirimGirdiFiyat = Convert.ToInt32(itemler[6]);
+                        ürünn.BirimGirdiFiyat = Convert.ToInt32(itemler[5]);
                         context.Stoks.Add(ürünn);
                         context.SaveChanges();
+                        count = count + 1;
                     }
 
 
