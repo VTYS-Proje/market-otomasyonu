@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Market_otomasyon.Migrations
 {
     [DbContext(typeof(MarketDbContext))]
-    [Migration("20210115173427_initial")]
+    [Migration("20210115194735_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

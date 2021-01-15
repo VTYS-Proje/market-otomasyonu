@@ -21,10 +21,25 @@ namespace Market_otomasyon
         MarketDbContext db = new MarketDbContext();
         private void btnsil_Click(object sender, EventArgs e)
         {
-            Moduls.Entity.Musteri musteriler = db.Musteris.First(u => u.TelefonNo == tel.Text);
-            MessageBox.Show(musteriler.MusteriAd + " " + musteriler.MusteriSoyad + " isimli müşteri silinmiştir.");
+            if (!String.IsNullOrEmpty(tel.Text))
+            {
+                Moduls.Entity.Musteri musteriler = db.Musteris.First(u => u.TelefonNo == tel.Text);
+                db.Musteris.Remove(musteriler);
+                db.SaveChanges();
+                MessageBox.Show(musteriler.MusteriAd + " " + musteriler.MusteriSoyad + " isimli müşteri silinmiştir.");
+                tel.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Telefon numarası boş geçilemez.");
+            }
+            /*Moduls.Entity.Musteri musteriler = db.Musteris.First(u => u.TelefonNo == tel.Text);
             db.Musteris.Remove(musteriler);
             db.SaveChanges();
+            MessageBox.Show(musteriler.MusteriAd + " " + musteriler.MusteriSoyad + " isimli müşteri silinmiştir.");
+            tel.Text = "";*/
+            //db.Musteris.Remove(musteriler);
+            //db.SaveChanges();
 
         }
     }
