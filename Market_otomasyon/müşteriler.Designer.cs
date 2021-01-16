@@ -51,6 +51,12 @@ namespace Market_otomasyon
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -59,12 +65,6 @@ namespace Market_otomasyon
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button11 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -331,6 +331,67 @@ namespace Market_otomasyon
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "BORÇ ÖDEME ";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.Location = new System.Drawing.Point(20, 64);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(89, 16);
+            this.label12.TabIndex = 35;
+            this.label12.Text = "Müşteri ID : ";
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox4.Location = new System.Drawing.Point(18, 83);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(178, 20);
+            this.textBox4.TabIndex = 34;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label11.Location = new System.Drawing.Point(316, 185);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(27, 29);
+            this.label11.TabIndex = 33;
+            this.label11.Text = "₺";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label10.Location = new System.Drawing.Point(316, 117);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(27, 29);
+            this.label10.TabIndex = 32;
+            this.label10.Text = "₺";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label9.Location = new System.Drawing.Point(316, 49);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(27, 29);
+            this.label9.TabIndex = 31;
+            this.label9.Text = "₺";
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(421, 233);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(84, 32);
+            this.button11.TabIndex = 30;
+            this.button11.Text = "Hesapla";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
@@ -422,67 +483,6 @@ namespace Market_otomasyon
             this.dataGridView1.TabIndex = 23;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(421, 233);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(84, 32);
-            this.button11.TabIndex = 30;
-            this.button11.Text = "Hesapla";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label9.Location = new System.Drawing.Point(316, 49);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(27, 29);
-            this.label9.TabIndex = 31;
-            this.label9.Text = "₺";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label10.Location = new System.Drawing.Point(316, 117);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(27, 29);
-            this.label10.TabIndex = 32;
-            this.label10.Text = "₺";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label11.Location = new System.Drawing.Point(316, 185);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(27, 29);
-            this.label11.TabIndex = 33;
-            this.label11.Text = "₺";
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.textBox4.Location = new System.Drawing.Point(18, 83);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(178, 20);
-            this.textBox4.TabIndex = 34;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(20, 64);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(89, 16);
-            this.label12.TabIndex = 35;
-            this.label12.Text = "Müşteri ID : ";
-            // 
             // müşteriler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -495,6 +495,7 @@ namespace Market_otomasyon
             this.Controls.Add(this.panel1);
             this.Name = "müşteriler";
             this.Text = "Müşteri Ve Borç Bilgileri Ekranı";
+            this.Load += new System.EventHandler(this.müşteriler_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

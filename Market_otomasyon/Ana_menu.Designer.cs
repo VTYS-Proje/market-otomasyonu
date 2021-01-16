@@ -46,6 +46,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button11 = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -65,16 +67,14 @@
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button14 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -297,6 +297,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Barkod No";
             // 
+            // button11
+            // 
+            this.button11.ForeColor = System.Drawing.Color.Black;
+            this.button11.Location = new System.Drawing.Point(6, 151);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(187, 32);
+            this.button11.TabIndex = 9;
+            this.button11.Text = "Seçilen Ürünü İptal Et";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(7, 168);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(0, 15);
+            this.label14.TabIndex = 8;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -503,24 +524,6 @@
             this.textBox3.Size = new System.Drawing.Size(180, 20);
             this.textBox3.TabIndex = 22;
             // 
-            // textBox8
-            // 
-            this.textBox8.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.textBox8.Location = new System.Drawing.Point(33, 67);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(180, 20);
-            this.textBox8.TabIndex = 21;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label17.Location = new System.Drawing.Point(30, 46);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(101, 16);
-            this.label17.TabIndex = 20;
-            this.label17.Text = "İşlem Tarihi : ";
-            // 
             // button12
             // 
             this.button12.Location = new System.Drawing.Point(33, 155);
@@ -539,27 +542,7 @@
             this.button13.TabIndex = 17;
             this.button13.Text = "ÖDE";
             this.button13.UseVisualStyleBackColor = true;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(7, 168);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(0, 15);
-            this.label14.TabIndex = 8;
-            // 
-            // button11
-            // 
-            this.button11.ForeColor = System.Drawing.Color.Black;
-            this.button11.Location = new System.Drawing.Point(6, 151);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(187, 32);
-            this.button11.TabIndex = 9;
-            this.button11.Text = "Seçilen Ürünü İptal Et";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.button13.Click += new System.EventHandler(this.button13_Click_1);
             // 
             // groupBox3
             // 
@@ -602,6 +585,24 @@
             this.label15.Size = new System.Drawing.Size(209, 16);
             this.label15.TabIndex = 3;
             this.label15.Text = "LÜTFEN ŞİFRENİZİ GİRİNİZ :";
+            // 
+            // textBox8
+            // 
+            this.textBox8.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox8.Location = new System.Drawing.Point(33, 67);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(180, 20);
+            this.textBox8.TabIndex = 21;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label17.Location = new System.Drawing.Point(30, 46);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(101, 16);
+            this.label17.TabIndex = 20;
+            this.label17.Text = "İşlem Tarihi : ";
             // 
             // Ana_menu
             // 
@@ -678,8 +679,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Label label12;
@@ -692,6 +691,8 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label17;
     }
 }
 //deneme 12

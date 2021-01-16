@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Market_otomasyon.Migrations
 {
     [DbContext(typeof(MarketDbContext))]
-    [Migration("20210115222202_initial")]
+    [Migration("20210115235203_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -28,14 +28,20 @@ namespace Market_otomasyon.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("MusteriAd")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("MusteriID")
                         .HasColumnType("int");
 
                     b.Property<double>("MusteriOdeme")
                         .HasColumnType("float");
 
-                    b.Property<int>("SatinAlmaTarihi")
-                        .HasColumnType("int");
+                    b.Property<string>("MusteriSoyad")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("SatinAlmaTarihi")
+                        .HasColumnType("datetime2");
 
                     b.Property<double>("Tutar")
                         .HasColumnType("float");
@@ -74,9 +80,6 @@ namespace Market_otomasyon.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("FaturaID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("MusteriID")
                         .HasColumnType("int");
 
                     b.Property<double>("Tutar")

@@ -546,3 +546,4 @@ C:\Users\mukad\Source\Repos\market-otomasyonu\Market_otomasyon\obj\Debug\Market_
 C:\Users\mukad\Source\Repos\market-otomasyonu\Market_otomasyon\obj\Debug\Market_otomasyon.csproj.CopyComplete
 C:\Users\mukad\Source\Repos\market-otomasyonu\Market_otomasyon\obj\Debug\Market_otomasyon.exe
 C:\Users\mukad\Source\Repos\market-otomasyonu\Market_otomasyon\obj\Debug\Market_otomasyon.pdb
+C:\Users\Lenovo\Source\Repos\market-otomasyonu\Market_otomasyon\obj\Debug\Market_otomasyon.Musteri_Sil.resources

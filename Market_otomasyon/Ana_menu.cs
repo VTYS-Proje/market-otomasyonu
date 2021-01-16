@@ -1,4 +1,5 @@
 ﻿using Market_otomasyon.Context;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,7 +40,21 @@ namespace Market_otomasyon
 
         private void button8_Click(object sender, EventArgs e)
         {
-
+            MarketDbContext db = new MarketDbContext();
+            var cntxt = new MarketDbContext();
+            _ = cntxt.PesinSatis.Add(new Moduls.Entity.PesinSatis
+            {
+                Tutar = Convert.ToInt32(textBox2.Text)
+            });
+            var cevap = cntxt.SaveChanges();
+            if (cevap <= 0)
+            {
+                MessageBox.Show("Satın Alma İşlemi Tamamlanamamıştır");
+            }
+            else
+            {
+                MessageBox.Show("Satın Alma İşlemi Tamamlanmıştır");
+            }
 
         }
 
@@ -193,6 +208,43 @@ namespace Market_otomasyon
                 textBox6.Clear();
             }
         }
+
+       
+
+        private void button13_Click_1(object sender, EventArgs e)
+        {
+            string musteriadi = " ";
+            string soyadi = " ";
+            MarketDbContext db = new MarketDbContext();
+            foreach (var deger in db.Musteris)
+            {
+                if (deger.MusteriID == Convert.ToInt32(textBox3.Text))
+                {
+                    musteriadi = deger.MusteriAd;
+                    soyadi = deger.MusteriSoyad;
+                }
+            }
+            var cntxtt = new MarketDbContext();
+            _ = cntxtt.Borcs.Add(new Moduls.Entity.Borc
+            {
+                MusteriAd = musteriadi,
+                MusteriSoyad = soyadi,
+                MusteriID = Convert.ToInt32(textBox3.Text),
+                Tutar = Convert.ToInt32(textBox2.Text)
+            });
+
+            var cevap = cntxtt.SaveChanges();
+            if (cevap <= 0)
+            {
+                MessageBox.Show("Satın Alma İşlemi Tamamlanamamıştır");
+            }
+            else
+            {
+                MessageBox.Show("Satın Alma İşlemi Tamamlanmıştır");
+            }
+        }
+
+        
     }
 
 }

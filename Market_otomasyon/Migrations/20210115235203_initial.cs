@@ -14,8 +14,10 @@ namespace Market_otomasyon.Migrations
                     BorcID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     MusteriID = table.Column<int>(nullable: false),
+                    MusteriAd = table.Column<string>(nullable: true),
+                    MusteriSoyad = table.Column<string>(nullable: true),
                     Tutar = table.Column<double>(nullable: false),
-                    SatinAlmaTarihi = table.Column<int>(nullable: false),
+                    SatinAlmaTarihi = table.Column<DateTime>(nullable: false),
                     MusteriOdeme = table.Column<double>(nullable: false)
                 },
                 constraints: table =>
@@ -45,7 +47,6 @@ namespace Market_otomasyon.Migrations
                     ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FaturaID = table.Column<int>(nullable: false),
-                    MusteriID = table.Column<int>(nullable: false),
                     Tutar = table.Column<double>(nullable: false)
                 },
                 constraints: table =>

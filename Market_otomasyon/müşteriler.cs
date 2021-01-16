@@ -93,12 +93,36 @@ namespace Market_otomasyon
 
         private void button10_Click(object sender, EventArgs e)
         {
+            string musteriadi = " ";
+            string soyadi = " ";
+            MarketDbContext db = new MarketDbContext();
+            foreach (var deger in db.Musteris)
+            {
+                if (deger.MusteriID == Convert.ToInt32(textBox4.Text))
+                {
+                    musteriadi = deger.MusteriAd;
+                    soyadi = deger.MusteriSoyad;
+                }
+            }
+            var cntxt = new MarketDbContext();
+            _ = cntxt.Borcs.Add(new Moduls.Entity.Borc
+            {
+                MusteriAd = musteriadi,
+                MusteriSoyad = soyadi,
+                MusteriID = Convert.ToInt32(textBox4.Text),
+                MusteriOdeme = Convert.ToInt32(textBox2.Text),
+                //SatinAlmaTarihi = Convert.ToDateTime(textBox8.Text),
 
+            });
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void müşteriler_Load(object sender, EventArgs e)
+        {
         }
     }
 }
